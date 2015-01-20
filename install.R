@@ -1,10 +1,10 @@
 install.packages("httpuv")
 require('devtools')
-install_github('shiny', 'rstudio')
-install_github('shiny-gridster', 'wch')
-install_github('dashifyr', 'ramnathv')
+#install_github('rstudio/shiny')
+install_github('wch/shiny-gridster')
+install_github('ramnathv/dashifyr')
+install_github('ramnathv/rHighCharts')
 
-
-require('dashifyr/)
+require('dashifyr')
 demoapp = system.file('demo', package = 'dashifyr')
 shiny::runApp(demoapp)
